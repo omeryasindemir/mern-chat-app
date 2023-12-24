@@ -75,7 +75,7 @@ const Form = () => {
           register={register} 
           errors={errors} 
           required 
-          placeholder="Write a message"
+          placeholder="Ne düşünüyorsun?"
         />
         <button 
           type="submit" 

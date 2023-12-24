@@ -42,7 +42,7 @@ const ProfileDrawer: React.FC<ProfileDrawerProps> = ({
 
   const statusText = useMemo(() => {
     if (data.isGroup) {
-      return `${data.users.length} members`;
+      return `${data.users.length} kişi`;
     }
 
     return isActive ? 'Active' : 'Offline'
@@ -90,7 +90,7 @@ const ProfileDrawer: React.FC<ProfileDrawerProps> = ({
                               className="rounded-md bg-white text-gray-400 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
                               onClick={onClose}
                             >
-                              <span className="sr-only">Close panel</span>
+                              <span className="sr-only">Paneli Kapat</span>
                               <IoClose size={24} aria-hidden="true" />
                             </button>
                           </div>
@@ -113,7 +113,7 @@ const ProfileDrawer: React.FC<ProfileDrawerProps> = ({
                                 <IoTrash size={20} />
                               </div>
                               <div className="text-sm font-light text-neutral-600">
-                                Delete
+                                Sil
                               </div>
                             </div>
                           </div>
@@ -130,7 +130,7 @@ const ProfileDrawer: React.FC<ProfileDrawerProps> = ({
                                   sm:flex-shrink-0
                                 "
                               >
-                                Emails
+                                E-Postalar
                               </dt>
                               <dd 
                                 className="
@@ -155,7 +155,7 @@ const ProfileDrawer: React.FC<ProfileDrawerProps> = ({
                                   sm:flex-shrink-0
                                 "
                               >
-                                Email
+                                E-Posta
                               </dt>
                               <dd 
                                 className="
@@ -182,7 +182,7 @@ const ProfileDrawer: React.FC<ProfileDrawerProps> = ({
                                     sm:flex-shrink-0
                                   "
                                 >
-                                  Joined
+                                  Katıldı
                                 </dt>
                                 <dd 
                                   className="

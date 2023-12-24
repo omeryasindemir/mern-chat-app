@@ -77,16 +77,16 @@ const SettingsModal: React.FC<SettingsModalProps> = ({
                 text-gray-900
               "
             >
-              Profile
+              Profil
             </h2>
             <p className="mt-1 text-sm leading-6 text-gray-600">
-              Edit your public information.
+              Kişiler bilgilerini düzenle.
             </p>
 
             <div className="mt-10 flex flex-col gap-y-8">
               <Input
                 disabled={isLoading}
-                label="Name" 
+                label="Kullanıcı Adı" 
                 id="name" 
                 errors={errors} 
                 required 
@@ -103,7 +103,7 @@ const SettingsModal: React.FC<SettingsModalProps> = ({
                     text-gray-900
                   "
                 >
-                  Photo
+                  Profil Fotoğrafı
                 </label>
                 <div className="mt-2 flex items-center gap-x-3">
                   <Image
@@ -123,7 +123,7 @@ const SettingsModal: React.FC<SettingsModalProps> = ({
                       secondary
                       type="button"
                     >
-                      Change
+                      Değiştir
                     </Button>
                   </CldUploadButton>
                 </div>
@@ -146,13 +146,13 @@ const SettingsModal: React.FC<SettingsModalProps> = ({
             secondary 
             onClick={onClose}
           >
-            Cancel
+            Çıkış
           </Button>
           <Button 
             disabled={isLoading}
             type="submit"
           >
-            Save
+            Kaydet
           </Button>
         </div>
       </form>
